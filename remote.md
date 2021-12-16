@@ -6,7 +6,7 @@ Any message I write here will appear on my github
 
 I can use this to:
 
-[ ] Create Tasks for myself
+[ ✔️] Create Tasks for myself
 [ ] let people know what my goals where for the project
 
 -HTML-
