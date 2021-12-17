@@ -18,6 +18,7 @@ playerTurn.innerHTML = currentPlayer + "'s turn";
 const gameBoard = document.querySelector('.game-board');
 
 function handledBoxClicked(e){
+    if(gameActive=== false)return 
     e.target.innerText = currentPlayer;
     gameState[e.target.getAttribute('data')] = currentPlayer
 
@@ -29,6 +30,7 @@ function handledBoxClicked(e){
     playerChange()
 }
 function playerChange(){
+    if(gameActive=== false)return 
     if(currentPlayer === 'X'){
         currentPlayer ='O'
     }else{
