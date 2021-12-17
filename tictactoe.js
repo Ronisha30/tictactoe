@@ -1,4 +1,4 @@
-// create a bunch of divs of 
+// create a bunch of variables of 
 let playerTurn = document.querySelector('.player-turn');
 let currentPlayer = "X";
 let gameState = ["", "", "", "", "", "", "", "", ""];
@@ -26,9 +26,9 @@ function handledBoxClicked(e){
         return
     }
     //currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-    playerSwitch()
+    playerChange()
 }
-function playerSwitch(){
+function playerChange(){
     if(currentPlayer === 'X'){
         currentPlayer ='O'
     }else{
@@ -71,7 +71,7 @@ const box = document.createElement('div');
 }
 
 
-// Restart button functionality
+// Restart button functional
 
 const clearButton = document.querySelector(".restart-button");
 
