@@ -71,7 +71,7 @@ const box = document.createElement('div');
 }
 
 
-// Restart button functional
+// Restart button function
 
 const clearButton = document.querySelector(".restart-button");
 
