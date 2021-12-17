@@ -17,20 +17,24 @@ playerTurn.innerHTML = currentPlayer + "'s turn";
 
 const gameBoard = document.querySelector('.game-board');
 
-function handledBoxClicked(e){
-    if(gameActive=== false)return 
+function handledBoxClicked (e){
+    if(gameActive === false)return
+    if(e.target.innerText !== '')return 
     e.target.innerText = currentPlayer;
     gameState[e.target.getAttribute('data')] = currentPlayer
+    
+    
+checkWin()
+if(gameActive === false){ 
+    return}
 
-    checkWin()
-    if(gameActive === false){
-        return
-    }
+
     //currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
     playerChange()
 }
 function playerChange(){
-    if(gameActive=== false)return 
+    if(gameActive === false)return
+
     if(currentPlayer === 'X'){
         currentPlayer ='O'
     }else{
